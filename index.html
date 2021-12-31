@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+        </style>
+    <script src="https://unpkg.com/scrollreveal"></script>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>worms - Dev</title>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <section class="home-main">
+            <div class="home">
+                <header>
+                    <img src="assets/sun.svg" id="icon">
+                    <img src="assets/worms-logo.svg"  class="logo-svg" id="logo" alt="">
+                    <a  href="#" class="sign-in">log in</a>
+                </header>
+                <div class="home-content-center">
+                    <div class="home-content">
+                        <div class="home-text-content" id="promo-text">BRAND NEW SHOPPING EXPERIENCE <br> WITH  CRYPTOCURRENCY</div>
+                        <a href="#advantages" class="scroll-to">SCROLL FOR MORE!</a>
+                    </div>
+                    <img src="assets/shape1.webp" alt="" class="obj1">
+                    <img src="assets/shape2.webp" alt="" class="obj2">
+                    <div class="home-image">
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+        <section class="pros" id=advantages>
+            <div class="pros-header">BENEFITS OF USING WORMS</div>
+            <div class="pros-desc">
+                <div class="fast">
+                    <img src="assets/hourglass.png" alt="" class="pro-icon">
+                    <div class="pro-h">fast</div>
+                    <div class="pro-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non dolor dignissimos eos ipsa? Fugiat, necessitatibus magnam quam doloribus soluta modi vero quod nam culpa, quo est! Nesciunt similique veniam, amet, libero iste inventore eveniet adipisci odit, veritatis ipsam cumque nemo animi repellat quo saepe architecto dolorum voluptatibus maxime consequuntur!</div>
+                </div>
+                <div class="secure">
+                    <img src="assets/safe.png" alt="" class="pro-icon">
+                    <div class="pro-h">secure</div>
+                    <div class="pro-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rem, cumque quasi ipsum blanditiis, amet aliquid nulla laudantium earum atque molestiae eum sapiente. Nisi, quos placeat debitis cumque iusto, id impedit, nostrum nesciunt facere ipsam amet? Aperiam obcaecati animi voluptas rerum maxime molestias sapiente, praesentium rem explicabo ut a magnam.</div>
+                </div>
+                <div class="cashback">
+                    <img src="assets/coins.png" alt="" class="pro-icon">
+                    <div class="pro-h">cashback</div>
+                    <div class="pro-t">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ad temporibus repellendus quia ducimus consectetur tempora non sunt quidem. Quam consectetur est voluptates voluptas, maxime fuga iure qui ea odio molestias natus nesciunt? Provident magni, deleniti numquam aut dignissimos mollitia autem quaerat cupiditate tempora sit debitis adipisci, doloremque doloribus repellat.</div>
+                </div>
+            </div>
+        </section>
+        <section class="how-work">
+            <div class="how-text">HOW DOES IT WORK?</div>
+            <div class="how-content">
+            <div class="step" id="account">
+                <div class="step-text">CREATE YOUR WORMS ACOOUNT AND <br>CONNECT YOUR CRYPTOCURRENCY EXCHANGE</div>
+                <div class="coins">
+                    <!-- <img src="/assets/btc-icon.svg" alt="" class="btc">
+                    <img src="/assets/eth-icon.svg" alt="" class="eth"> -->
+
+                </div>
+            </div>
+            <div class="step" id="cart">
+                <div class="step-text">ADD AN ITEM TO CART <br><br> THAT'S IT!</div>
+                <div class="coins">
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="join-now"><div class="join-now">
+            <img src="assets/join-now.png" alt="" class="join-icon">
+                <div class="join-content">
+                    <div class="join-text">create your account and start shopping with <p class="worms-logo">worms</p></div>
+                    <button class="join-now-button">join now</button></div></div>   
+        </section>
+        
+        <section class="news">
+            <div class="mobile">
+                <img src="assets/mobile.png" id="mockup-png" alt="" class="mobile-icon">
+                <div class="mobile-content">
+                    <div class="mobile-h">good news!</div>
+                    <div class="mobile-text">worms mobile app coming soon!</div>
+                    <div class="store-badges">
+                        <img src="assets/app-store.svg" alt="" class="app-store">
+                        <img src="assets/play-store.svg" alt="" class="play-store">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+
+        var icon = document.getElementById("icon")
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "assets/moon.svg";
+                document.getElementById("mockup-png").src='assets/mobile-dark.png';
+                document.getElementById("logo").src="assets/worms-logo-dark.svg";
+            }else{
+                icon.src = "assets/sun.svg";
+                document.getElementById("mockup-png").src='assets/mobile.png';
+                document.getElementById("logo").src="assets/worms-logo.svg";
+
+            }
+        }
+
+            
+    </script>
+    <script>
+        ScrollReveal().reveal('.home-text-content', {delay:500});
+        ScrollReveal().reveal('.scroll-to', {delay:500});
+        ScrollReveal().reveal('.join-icon', {delay:500});
+        ScrollReveal().reveal('.join-text', {delay:500});
+        ScrollReveal().reveal('.join-now-button', {delay:1000});
+    </script>
+
+</body>
+
+
+
+
+
+
+
+</html>
