@@ -1,0 +1,229 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+        </style>
+    <script src="https://unpkg.com/scrollreveal"></script>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="locomotive.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>worms - Dev</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+    
+</head>
+<body>
+    <!-- <div class="loader">
+        <img src="/assets/worms-logo.svg" alt="" class="loader-logo">
+    </div> -->
+    <div class="content-container" id="fullpage" data-scroll-container>
+        <div class="section" id="home-main" data-anchor="home" data-scroll-section>
+            <div class="home">
+                <video src="/assets/bg-elements/home-ani.mp4" autoplay muted loop class="bg-video"></video>
+                <header>
+                    <!-- <img src="assets/moon.svg" loading="lazy"  id="icon"> Dark Mode Toggle -->
+                    <img src="assets/worms-logo-dark.svg" loading="lazy"   class="logo-svg" id="logo" alt="">
+                    <div class="header-item">
+                        <a  href="login.html" class="sign-in">log in</a>
+                    </div>
+                </header>
+                <div class="home-container">
+                <div class="home-content-center">
+                    <div class="home-content">
+                        <div class="home-text-content" id="promo-text" data-scroll data-scroll-speed="3">MEET WITH WORMS</div>
+                        <p class="home-subtitle" data-scroll data-scroll-speed="2">CRYPTOCURRENCY BASED MARKETPLACE</p>
+                        <a href="#what-is" class="scroll-to" data-scroll data-scroll-speed="1">LET'S GET STARTED!</a>
+                    </div>
+                </div>
+                <div class="home-img"></div>
+            </div>
+            </div>
+        </div>
+        <div class="section" id="what-is" data-scroll-section>
+            <div class="what-bg">
+                <div class="what-container">
+                    <div class="what-header">WHAT IS WORMS?</div> 
+                    <div class="what-text-controller">
+                        <div class="what-first-p" data-scroll data-scroll-speed="2">
+                            Worms is a cryptocurrency based marketplace. <br><br> Worms has a two different account types. Customer and Seller account! <br> You can create order quickly. Your payments are totally secured. We use Binance Payment API. <br> Also you can get cashbacks at certain rates! Scroll to see all Worms's benefits.
+                        </div>      
+                    </div> 
+                    <div class="what-content">
+                    <div class="what-text-controller">
+                        <div class="what-is-text" id="what-is-text">
+                            With a Customer account; <br><br> You can use your cryptocurrencyies for shopping. Also you get cashbacks for certain rates.In short, Worms is next generation of shopping experience! <br><br>Worms has a many benefits! Scroll to learn!
+                        </div>
+                        <div class="what-text-changer">
+                            <a  class="what-text-checkbox" id="customer">CUSTOMER ACCOUNT</a><br><br>
+                            <a  class="what-text-checkbox" id="seller">SELLER ACCOUNT</a>   
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id=pros data-anchor="benefits-of-worms" data-scroll-section>
+                <!-- <video src="/assets/bg-elements/pros-ani.mp4" autoplay muted loop class="pros-video"></video> -->
+                <div class="pros-header">BENEFITS OF WORMS</div>
+                <div class="pros-container">
+                    <div class="pros-text-switcher">
+                        <a  class="pros-text-checkbox" id="customer-pros">CUSTOMER BENEFITS</a>
+                        <span class="divider">|</span>
+                        <a  class="pros-text-checkbox" id="seller-pros">SELLER BENEFITS</a>
+                    </div>
+                    <div id="pros-flex">
+                        <div class="fast" data-scroll data-scroll-speed="3">
+                            <img src="/assets/clock.png" alt="" class="pro-icon" id="clock">   
+                            <div class="pros-controller">
+                                <div class="pro-h">Fast</div>
+                                <div class="pro-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non dolor dignissimos eos ipsa? Fugiat, necessitatibus magnam quam doloribus soluta modi vero quod nam culpa, quo est! Nesciunt similique veniam, amet, libero iste inventore eveniet adipisci odit, veritatis ipsam cumque nemo animi repellat quo saepe architecto dolorum voluptatibus maxime consequuntur!</div>
+                            </div>
+                        </div>   
+                        <div class="secure" data-scroll data-scroll-speed="3">
+                            <img src="/assets/secure.png" alt="" class="pro-icon" id="secure">
+                            <div class="pros-controller">
+                                <div class="pro-h">Secure</div>
+                                <div class="pro-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non dolor dignissimos eos ipsa? Fugiat, necessitatibus magnam quam doloribus soluta modi vero quod nam culpa, quo est! Nesciunt similique veniam, amet, libero iste inventore eveniet adipisci odit, veritatis ipsam cumque nemo animi repellat quo saepe architecto dolorum voluptatibus maxime consequuntur!</div>
+                            </div>
+                        </div>
+                        <div class="cashback" data-scroll data-scroll-speed="3">
+                            <img src="/assets/wallet.png" alt="" class="pro-icon" id="cashback-png">
+                            <div class="pros-controller">
+                                <div class="pro-h">Cashback</div>
+                                <div class="pro-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non dolor dignissimos eos ipsa? Fugiat, necessitatibus magnam quam doloribus soluta modi vero quod nam culpa, quo est! Nesciunt similique veniam, amet, libero iste inventore eveniet adipisci odit, veritatis ipsam cumque nemo animi repellat quo saepe architecto dolorum voluptatibus maxime consequuntur!</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>    
+        </div>
+        <div class="section" id=steps data-scroll-section>
+            <div class="steps-bg">
+                <div class="step-content">
+                    <p class="step-header" ata-scroll data-scroll-speed="2">Only 3 steps to start using Worms!</p>
+                    <div class="steps-container">
+                        <div class="step">
+                        <img src="/assets/keys.png" alt="" class="step-photo" data-scroll data-scroll-speed="2">    
+                            create an account
+                        </div>
+                        <div class="step">
+                            <img src="/assets/link.png" alt="" class="step-photo" data-scroll data-scroll-speed="4">
+                            connect your exchange
+                        </div>
+                        <div class="step">
+                            <img src="/assets/rocket.svg" alt="" class="step-photo" data-scroll data-scroll-speed="3">
+                            that's it!
+                        </div>
+                    </div>
+                    
+            </div>
+            </div>
+        </div> 
+        <div class="section" id="join-now" data-anchor="join-worms" data-scroll-section>
+            <div class="join-container">
+            <video src="/assets/bg-elements/join-ani.MOV" autoplay muted loop class="join-video"></video>
+            <div class="join-form-box">
+                    <div class="join-text">let's create a Worms account! </div>
+                    <div class="register">            
+                        <input id="name" placeholder="Name" type="text">
+                        <input id="email" placeholder="Email" type="email">
+                        <input id="password" placeholder="Password" type="password">
+                        <button class="submit">Sign Up</button>
+                        <div class="register-desc">or use your social accounts!</div>
+                        <div class="social-options">
+                            <div class="login-option">
+                                <img src="https://img.icons8.com/material-sharp/24/000000/google-logo.png"/>
+                            </div>
+                            <div class="login-option">
+                                <img src="https://img.icons8.com/ios-glyphs/24/000000/mac-os.png"/>
+                            </div>
+                            <div class="login-option">
+                                <img src="https://img.icons8.com/ios-glyphs/24/000000/facebook-new.png"/>
+                            </div>
+                        </div>
+                        <div class="register-desc">already have an account? <a href="" class="login-link">log in!</a></div>
+                    </div>
+            </div>
+            </div>
+        </div>
+                <div class="section" id="news" data-anchor="news" data-scroll-section>
+                    <div class="mobile">
+                        <img data-scroll data-scroll-speed="2" src="assets/mobile-dark.png" loading="lazy"  id="mockup-png" alt="" class="mobile-icon">
+                        <div class="mobile-content">
+                            <div class="mobile-h">good news!</div>
+                            <div class="mobile-text">worms mobile app coming soon!</div>
+                            <div class="store-badges">
+                                <img src="assets/app-store.svg" loading="lazy"   alt="" class="app-store">
+                                <img src="assets/play-store.svg"  loading="lazy" alt="" class="play-store">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer" data-scroll-section>
+                    <div class="worms-footer">
+                    <img src="/assets/worms-logo-dark.svg" alt="" class="footer-logo">
+                    <p>© 2022 Worms | All Rights Reserved</p>
+                    </div>
+                    <div class="about-us">
+                        <div class="footer-header">About Us</div>
+                            <a  href="" class="footer-item"> Who are we?</a><br>
+                            <a  href="" class="footer-item"> Carrier</a><br>
+                            <a  href="" class="footer-item"> Worms Blog</a><br>
+                            <a  href="" class="footer-item"> Annocuments</a>
+                    </div>
+                    <div class="about-us">
+                        <div class="footer-header">Support</div>
+                            <a  href="" class="footer-item"> FAQ</a><br>
+                            <a  href="" class="footer-item"> Contact Us</a><br>
+                            <a  href="" class="footer-item"> Worms Community</a><br>
+                            <a  href="" class="footer-item"> Feedback</a>
+                    </div>
+                </div>
+            </div>  
+
+
+    </div>
+    </div>
+     
+    <!-- <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(1000);
+            $("#fullpage").fadeIn(1000);
+        })
+    </script> -->
+
+    <script>
+        const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+    </script>
+
+    <script>
+        // ScrollReveal().reveal('.home-text-content', {delay: 750});
+        ScrollReveal().reveal('.home-subtitle', {delay:750});
+        ScrollReveal().reveal('.scroll-to', {delay:500});   
+    </script>
+
+<script src="/js/text-changer.js"></script>
+<script src="/js/dark-mode.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
