@@ -184,14 +184,7 @@ html  {
   
   
   #home-main {  
-      /* background-image: url(/assets/bg-elements/bg-home2.png); */
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position: center;
-      background-repeat: no-repeat;
-      animation-name: home-bg-animation;
-      animation-duration: 60s;
-      animation-iteration-count: infinite;
+    background-color: #E5E7E9;
   }
   
   
@@ -392,7 +385,6 @@ html  {
   
   
   #pros {
-      margin-top: 3rem;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -411,7 +403,7 @@ html  {
   
   #what-is {
     margin-top: 3rem;
-    height: auto;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -599,18 +591,14 @@ html  {
   }
 
   .pros-header {
-      background-color: #D7DBDD;
       z-index: 5;
       transition: 300ms all;
       color: var(--white-text-color);
-      padding: 12px;
-      border-radius: 10px;
-      border: 1px solid var(--home-color);
-      margin: 2%;
-      margin-top: 1%;
+      margin-top: 2rem;
+      margin-bottom: 6rem;
       font-family: "Akira";
       text-align: center;
-      font-size: 24px;
+      font-size: 1.75rem;
   }
   
   .pros-header:hover {
@@ -776,22 +764,40 @@ html  {
   
 
 
-  .what-first-p{
-    background: rgba( 0, 0, 0, 0.1 );
+  #first-p {
+    margin-top: 3rem;
+  }
+
+  .what-p{
+    background: rgba( 215, 219, 221, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     font-weight: 500;
     font-size: 1rem ;
     font-family: "Poppins";
     padding: 12px;
     color: var(--white-text-color);
     margin: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 1rem;
     text-align: center;
-    width: 70vw;
+    width: 60vw;
     height: 30vh;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
     /* box-shadow: 0 8px 32px 0 rgba( 12, 12, 12, 0.35 ); */
+  }
+
+  .what-img-1 {
+    width: 250px;
+    height: 250px;
+  }
+  .what-img-2 {
+    width: 230px;
+    height: 230px;
+  }
+  .what-img-3 {
+    width: 300px;
+    height: 300px;
   }
 
   
@@ -877,6 +883,7 @@ html  {
   .fast:hover {
       z-index: 6;
       transition: 300ms all;
+      border: 1px solid rgba(17, 15, 15, 0.8);
       transform: translateY(-10px);
       box-shadow: 0 8px 32px 0 rgba( 22, 22, 22, 0.25 );
       cursor: default;
@@ -903,6 +910,7 @@ html  {
   .secure:hover {
       transition: 300ms all;
       transform: translateY(-10px);
+      border: 1px solid rgba(17, 15, 15, 0.8);
       box-shadow: 0 8px 32px 0 rgba( 22, 22, 22, 0.25 );
       cursor: default;
   }
@@ -928,6 +936,7 @@ html  {
   .cashback:hover {
       transition: 300ms all;
       transform: translateY(-10px);
+      border: 1px solid rgba(17, 15, 15, 0.8);
       box-shadow: 0 8px 32px 0 rgba( 22, 22, 22, 0.25 );
       cursor: default;
   }
@@ -1074,7 +1083,7 @@ html  {
     transition: 300ms all;
     color: var(--white-text-color);
     margin: 6px;
-    background: rgba(17,15,15,0.2);
+    background: rgba(17,15,15,0.3);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
@@ -1085,7 +1094,7 @@ html  {
   
   #email:hover, #name:hover, #password:hover {
     transition: 300ms all;
-    background: rgba(17,15,15,0.3);
+    background: rgba(17,15,15,0.4);
     
   }
 
@@ -1097,7 +1106,7 @@ html  {
     transition: 300ms all;
     color: rgba(253, 250, 251, 0.7);
     margin: 6px;
-    background: rgba(17,15,15,0.2);
+    background: rgba(17,15,15,0.3);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     padding: 10px 12px 10px 12px;
@@ -1111,7 +1120,7 @@ html  {
   
   .submit:hover{
     cursor: pointer;
-    background: rgba(17,15,15,0.3);
+    background: rgba(17,15,15,0.4);
     color: rgba(253, 250, 251, 1);
     transition: 300ms all;
   }
@@ -1275,6 +1284,18 @@ html  {
     align-items: center;
   }
 
+  #ea-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .worms-footer {
     margin-top: 5px;
     display: flex;
@@ -1380,7 +1401,7 @@ html  {
   }
   
   .section {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   
  /* #fullpage {
@@ -1629,7 +1650,7 @@ html  {
       }
 
       .pros-container {
-        margin-top: 2rem;
+        margin-top: 3rem;
         width: 85vw;
         flex-direction: column;
         justify-content: center;
